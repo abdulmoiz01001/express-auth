@@ -1,0 +1,23 @@
+<!-- public/upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>File Upload</title>
+</head>
+<body>
+  <h2>Upload Single File</h2>
+  <form action="/api/files/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" required />
+    <button type="submit">Upload</button>
+  </form>
+
+  <br><br><br>
+   <h2>Upload Multiple Files</h2>
+  <form action="/api/files/upload-multiple" method="POST" enctype="multipart/form-data">
+  <input type="file" name="files" multiple required />
+  <button type="submit">Upload Multiple</button>
+</form>
+
+</body>
+</html>
